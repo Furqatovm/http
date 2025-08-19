@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
-    <header class="bg-[#F2F4F7]">
+    <header class="bg-[#F2F4F7] max-md:hidden">
         <div class="max-w-[1250px] mx-auto flex justify-between py-[5px]">
             <div class="left flex gap-[1.2rem] items-center">
                 <div class="flex items-center"><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -51,7 +51,67 @@
         </div>
     </header>
 
-    <section>
+    <header class="md:hidden px-[1rem] flex flex-col gap-[10px]">
+        <div class="flex justify-between items-center">
+            <div class="left flex gap-[10px] items-center">
+                <svg width='36' height='36' viewBox='0 0 36 36' fill='none' xmlns='http://www.w3.org/2000/svg'> <g clip-path='url(#clip0_2057_199813)'> <mask id='mask0_2057_199813' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='36' height='36'> <path d='M18 0C33 0 36 3 36 18C36 33 33 36 18 36C3 36 0 33 0 18C0 3 3 0 18 0Z' fill='white'/> </mask> <g mask='url(#mask0_2057_199813)'> <rect width='36' height='36' fill='#FFFF00'/> <path d='M1.7424 8.42296C1.3915 9.57087 1.63459 10.9497 2.12075 13.7073L3.09512 19.2342C3.4556 21.2789 3.68243 22.5655 4.07004 23.4849L0 24.2027V36H4.5L29.8228 31.532C33.1937 30.9375 35.4445 27.7225 34.8501 24.351C34.5822 22.831 33.7816 21.5386 32.6742 20.6322C32.9649 20.2115 33.1912 19.7461 33.3425 19.251C33.6934 18.1031 33.4503 16.7242 32.9642 13.9666L31.9898 8.43977C31.5036 5.68212 31.2605 4.30329 30.5383 3.34464C29.9029 2.50138 29.017 1.88094 28.0074 1.57223C26.8597 1.22128 25.4811 1.46441 22.7239 1.95065L8.6088 4.43993C5.8516 4.92618 4.47301 5.16931 3.51451 5.8917C2.67139 6.52714 2.05105 7.41323 1.7424 8.42296Z' fill='#7000FF'/> <path d='M17.9998 6.96094C17.5841 6.96094 17.1755 6.97855 16.7703 7.01378L16.7633 12.7266H19.2293V7.01378C18.8241 6.96094 18.4155 6.96094 17.9998 6.96094Z' fill='white'/> <path d='M22.8722 19.3328C24.1644 18.0406 24.8904 16.2879 24.8904 14.4604V10.3352C23.9968 10.0367 23.0833 9.80122 22.1567 9.63061V14.4357C22.1567 17.8916 20.6912 19.6988 17.9998 19.6988C15.3084 19.6988 13.8464 17.8916 13.8464 14.4357V9.63061C12.9187 9.80166 12.0041 10.0371 11.1092 10.3352V14.4604C11.1092 16.2879 11.8351 18.0406 13.1274 19.3328C14.4196 20.625 16.1723 21.375 17.9998 21.375C19.8273 21.375 21.58 20.625 22.8722 19.3328Z' fill='white'/> <path d='M20.4184 28.8032H21.5025V26.9742L23.1982 28.8032H24.477L22.7257 26.8911L24.338 25.0621H23.0592L21.5025 26.808V23.8983H20.4184V28.8032Z' fill='white'/> <path d='M7.32527 25.6719C7.60325 25.2562 8.10362 24.9791 8.79858 24.9791C9.96612 24.9791 10.5221 25.7273 10.5221 26.6418V28.831H9.43795V26.8081C9.43795 26.3647 9.18776 25.9767 8.65959 25.9767C8.13142 25.9767 7.88124 26.337 7.88124 26.7804V28.831H6.7971V26.7804C6.7971 26.337 6.51911 25.9767 5.99094 25.9767C5.46277 25.9767 5.24039 26.3647 5.24039 26.8081V28.831H4.15625V26.6418C4.15625 25.7273 4.74002 24.9791 5.90755 24.9791C6.49132 24.9791 7.07508 25.2562 7.32527 25.6719Z' fill='white'/> <path fill-rule='evenodd' clip-rule='evenodd' d='M15.4981 27.5009V25.0622H14.4139V25.6442C14.1915 25.2839 13.7746 24.9791 13.0518 24.9791C11.8009 24.9791 11.1615 25.949 11.1615 26.9189C11.1337 27.9165 11.8565 28.8864 12.9962 28.8864C13.6078 28.8864 14.1637 28.6093 14.4139 28.1382C14.5251 28.4431 14.8031 28.7756 15.3591 28.7756H15.9706V27.8611H15.8038C15.5814 27.9165 15.4981 27.8334 15.4981 27.5009ZM13.2742 27.972C12.6626 27.972 12.19 27.5563 12.19 26.9466C12.19 26.3647 12.6626 25.949 13.2742 25.949C13.9135 25.949 14.3583 26.3647 14.3583 26.9466C14.3861 27.5286 13.9135 27.972 13.2742 27.972Z' fill='white'/> <path d='M16.8881 28.8033H17.9722V27.1406C17.9722 26.5032 18.4448 26.0876 19.0286 26.0876H19.7513V24.9791H19.2232C18.556 24.9791 18.0834 25.5333 17.9722 25.8659V25.0622H16.8881V28.8033Z' fill='white'/> <path fill-rule='evenodd' clip-rule='evenodd' d='M25.6721 27.2237C25.6721 27.6394 25.8945 28.0551 26.5895 28.0551C27.2288 28.0551 27.3122 27.6671 27.3122 27.6671H28.5076C28.5076 27.6671 28.3964 28.8864 26.5895 28.8864C25.3386 28.8864 24.5324 28.1936 24.5324 26.9189C24.5324 25.6719 25.3108 24.9791 26.5617 24.9791C27.7848 24.9791 28.591 25.6719 28.591 26.9189C28.591 27.0575 28.5632 27.196 28.5632 27.196H25.6721V27.2237ZM25.6999 26.5587H27.4512C27.4512 26.2538 27.2844 25.8105 26.5895 25.8105C25.8945 25.8382 25.6999 26.2538 25.6999 26.5587Z' fill='white'/> <path d='M31.1762 27.8611C30.8148 27.8611 30.6758 27.6948 30.6758 27.1683V25.8659H31.8434V24.9791H30.6758V24.2309H30.0921L29.0357 25.2285V25.8382H29.5917V27.3069C29.5917 28.3599 30.1199 28.8033 31.1762 28.8033H31.8434V27.8611H31.1762Z' fill='white'/> </g> </g> <defs> <clipPath id='clip0_2057_199813'> <rect width='36' height='36' fill='white'/> </clipPath> </defs> </svg>
+                <div class="flex flex-col">
+                    <span class="text-[1rem]">Uzum Market</span>
+                    <span class="text-[14px]">Ilovani yuklab olish</span>
+                </div>
+            </div>
+
+            <button class="bg-[#7000ff] py-[5px] max-w-[20%] w-[100%] rounded-[10px] text-[white]">Yuklab olish</button>
+        </div>
+
+        <div class="flex justify-between items-center">
+            <div class="flex items-center"><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.59998 11C7.59998 8.23858 9.83856 6 12.6 6C15.3614 6 17.6 8.23858 17.6 11C17.6 13.2317 16.4079 15.2429 15.1153 16.7262C14.4738 17.4623 13.8212 18.0525 13.3097 18.4561C13.0536 18.6582 12.8375 18.8098 12.6802 18.9082C12.6504 18.9268 12.6237 18.9429 12.6 18.9567C12.5763 18.9429 12.5496 18.9268 12.5198 18.9082C12.3625 18.8098 12.1464 18.6582 11.8903 18.4561C11.3788 18.0525 10.7262 17.4623 10.0847 16.7262C8.79206 15.2429 7.59998 13.2317 7.59998 11ZM12.6 5C9.28627 5 6.59998 7.68629 6.59998 11C6.59998 13.5808 7.96825 15.8196 9.33079 17.3832C10.0169 18.1705 10.7156 18.803 11.2709 19.2411C11.5482 19.46 11.7944 19.634 11.9897 19.7561C12.0866 19.8167 12.1778 19.8688 12.2582 19.9076C12.2982 19.9269 12.3428 19.9465 12.3889 19.9623C12.4251 19.9747 12.5044 20 12.6 20C12.6956 20 12.7749 19.9747 12.8111 19.9623C12.8572 19.9465 12.9018 19.9269 12.9418 19.9076C13.0222 19.8688 13.1134 19.8167 13.2103 19.7561C13.4056 19.634 13.6518 19.46 13.9291 19.2411C14.4844 18.803 15.1831 18.1705 15.8692 17.3832C17.2317 15.8196 18.6 13.5808 18.6 11C18.6 7.68629 15.9137 5 12.6 5ZM11.6 11C11.6 10.4477 12.0477 10 12.6 10C13.1523 10 13.6 10.4477 13.6 11C13.6 11.5523 13.1523 12 12.6 12C12.0477 12 11.6 11.5523 11.6 11ZM12.6 9C11.4954 9 10.6 9.89543 10.6 11C10.6 12.1046 11.4954 13 12.6 13C13.7046 13 14.6 12.1046 14.6 11C14.6 9.89543 13.7046 9 12.6 9Z" fill="#1F2026"/>
+                </svg>
+                <select name="Salomatlik" id="dkasld" class="text-[#000] font-[500] cursor-[pointer]">
+                    <option value="">Toshkent</option>
+                    <option value="">Toshkent</option>
+                    <option value="">Toshkent</option>
+                </select>   
+            </div> 
+            <a href="#" class="text-[#8B8E99] text-[14px]">yetkazib beriladigan shahar</a>
+        </div>
+        <div class="bg-[#dee0e5] py-[5px] px-[1rem] flex items-center rounded-[10px]">
+            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.0551 10.5C16.0551 13.2614 13.8165 15.5 11.0551 15.5C8.29363 15.5 6.05505 13.2614 6.05505 10.5C6.05505 7.73858 8.29363 5.5 11.0551 5.5C13.8165 5.5 16.0551 7.73858 16.0551 10.5ZM14.8949 15.7451C13.8191 16.5341 12.4915 17 11.0551 17C7.4652 17 4.55505 14.0899 4.55505 10.5C4.55505 6.91015 7.4652 4 11.0551 4C14.645 4 17.5551 6.91015 17.5551 10.5C17.5551 11.9364 17.0892 13.264 16.3002 14.3398L20.2641 18.3036C20.6521 18.6917 20.6521 19.3209 20.2641 19.709C19.876 20.097 19.2468 20.097 18.8587 19.709L14.8949 15.7451Z" fill="#595B66"/>
+                </svg>
+                <input type="search" placeholder="Mahsulotlar va turkumlar izlash" class="w-[90%] outline-none">
+        </div>
+    </header>
+
+    <section class="fixed bottom-0 left-0 right-0 md:hidden px-[2rem] py-[5px] bg-[white] border-t border-[#dee0e5] flex justify-between items-center">
+        <div class="flex flex-col">
+            <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#8B8E99"><path d="M80-200v-80h400v80H80Zm0-200v-80h200v80H80Zm0-200v-80h200v80H80Zm744 400L670-354q-24 17-52.5 25.5T560-320q-83 0-141.5-58.5T360-520q0-83 58.5-141.5T560-720q83 0 141.5 58.5T760-520q0 29-8.5 57.5T726-410l154 154-56 56ZM560-400q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Z"/></svg>
+            <span class="text-[1rem] text-[#8B8E99] text-center">Katalog</span>
+        </div>
+
+        <div class="flex flex-col">
+            <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#8B8E99"><path d="M80-200v-80h400v80H80Zm0-200v-80h200v80H80Zm0-200v-80h200v80H80Zm744 400L670-354q-24 17-52.5 25.5T560-320q-83 0-141.5-58.5T360-520q0-83 58.5-141.5T560-720q83 0 141.5 58.5T760-520q0 29-8.5 57.5T726-410l154 154-56 56ZM560-400q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Z"/></svg>
+            <span class="text-[1rem] text-[#8B8E99]">Katalog</span>
+        </div>
+
+        <div class="flex flex-col">
+            <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#8B8E99"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg>            
+            <span class="text-[1rem] text-[#8B8E99] text-center">Savat</span>
+        </div>
+
+        <div class="flex flex-col">
+            <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#8B8E99"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"/></svg>            
+            <span class="text-[1rem] text-[#8B8E99] text-center">Saralanganlar</span>
+        </div>
+
+        <div class="flex flex-col">
+            <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#8B8E99"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>            
+            <span class="text-[1rem] text-[#8B8E99] text-center">Kabinet</span>
+        </div>
+    </section>
+
+    <section class="max-md:hidden">
         <div class="con max-w-[1250px] mx-auto flex justify-between items-center py-[1.1rem]">
             <div class="left">
                 <img src="./assets/logo.png" class="w-[215px]" alt="">
@@ -131,7 +191,7 @@
             </div>
         </div>
     </section>
-    <section class="max-w-[1250px] mx-auto flex justify-between items-center">
+    <section class="max-w-[1250px] mx-auto flex justify-between items-center max-md:hidden">
         <div class="flex items-center gap-[4px]">
                 <img src="./assets/div.image.png" class="w-[24px]" alt="">
                 <span class="text-[#1F2026] text-[12.8px] font-[600]">Muddatli to'lov</span>                
@@ -153,23 +213,7 @@
         </select>
     </section>
 
-    <section class="max-w-[1250px] mx-auto h-full w-full cursor-[pointer] my-[1.1rem]">
-        <!-- <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="./assets/first-image.jpg" class="rounded-[8px]" alt="">
-              </div>
-              <div class="swiper-slide">Slide 2</div>
-              <div class="swiper-slide">Slide 3</div>
-              <div class="swiper-slide">Slide 4</div>
-              <div class="swiper-slide">Slide 5</div>
-              <div class="swiper-slide">Slide 6</div>
-              <div class="swiper-slide">Slide 7</div>
-              <div class="swiper-slide">Slide 8</div>
-              <div class="swiper-slide">Slide 9</div>
-            </div>
-            <div class="swiper-pagination"></div>
-          </div> -->
+    <section class="max-w-[1250px] mx-auto h-full w-full cursor-[pointer] my-[1.1rem] max-md:px-[1rem] rounded-[8px]">
           <div class="swiper mySwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -206,23 +250,23 @@
           </div>
     </section>
 
-    <section class="btns max-w-[1250px] mx-auto flex justify-between items-center">
-        <button class="w-[24%] flex gap-[1rem] items-center bg-[#efefef] justify-center py-[10px] rounded-[20px]">
+    <section class="btns max-w-[1250px] mx-auto grid grid-cols-4 gap-[1rem] max-md:grid-cols-2 max-md:px-[1rem]">
+        <button class="flex gap-[1rem] items-center bg-[#efefef] justify-center py-[10px] rounded-[20px]">
             <img src="./assets/ayiq.png" class="w-[40px]" alt="qonday">
             <span class="text-[#1f2026] font-[500]">Onalar va bolalar uchun</span>
         </button>
 
-        <button class="w-[24%] flex gap-[1rem] items-center bg-[#efefef] justify-center py-[10px] rounded-[20px]">
+        <button class="flex gap-[1rem] items-center bg-[#efefef] justify-center py-[10px] rounded-[20px]">
             <img src="./assets/second.png" class="w-[40px]" alt="qonday">
             <span class="text-[#1f2026] font-[500]">Arzon narxlar kafolati</span>
         </button>
 
-        <button class="w-[24%] flex gap-[1rem] items-center bg-[#efefef] justify-center py-[10px] rounded-[20px]">
+        <button class="flex gap-[1rem] items-center bg-[#efefef] justify-center py-[10px] rounded-[20px]">
             <img src="./assets/third.png" class="w-[40px]" alt="qonday">
             <span class="text-[#1f2026] font-[500]">Zamonaviy Bozor</span>
         </button>
 
-        <button class="w-[24%] flex gap-[1rem] items-center bg-[#efefef] justify-center py-[10px] rounded-[20px]">
+        <button class="flex gap-[1rem] items-center bg-[#efefef] justify-center py-[10px] rounded-[20px]">
             <img src="./assets/forth.png" class="w-[40px]" alt="qonday">
             <span class="text-[#1f2026] font-[500]">Maktab bozori</span>
         </button>
@@ -230,7 +274,7 @@
 
     </section>
 
-    <section class="max-w-[1250px] mx-auto my-[2rem]">
+    <section class="max-w-[1250px] mx-auto my-[2rem] px-[1rem]">
         <div class="flex gap-[0.5rem] items-center">
             <h1 class="text-[#1F2026] text-[1.75rem] font-[700]">Mashhur</h1>
             <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -240,10 +284,23 @@
 
     </section>
 
-    <div class="lists grid grid-cols-5 max-w-[1250px] mx-auto w-full gap-[20px]"></div>
+    <div class="lists grid grid-cols-5 max-w-[1250px] mx-auto w-full gap-[20px] max-md:px-[1rem] max-md:grid-cols-3"></div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              screens: {
+                'max-sm': { 'max': '639px' },   // 639px gacha
+                'max-md': { 'max': '767px' },   // 767px gacha
+                'max-lg': { 'max': '1023px' },  // 1023px gacha
+              }
+            }
+          }
+        }
+      </script>
 </body>
 </html>
